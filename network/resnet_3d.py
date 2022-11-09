@@ -27,7 +27,7 @@ class RESNET18(nn.Module):
 		initializer.xavier(net=self)
 
 		if pretrained:
-			pretrained_model=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pretrained/r3d_18-b3b3357e.pth')
+			pretrained_model=os.path.join(os.path.dirname(os.path.realpath(__file__)), 'pretrained/_18-b3b3357e.pth')
 			logging.info("Network:: graph initialized, loading pretrained model: `{}'".format(pretrained_model))
 			assert os.path.exists(pretrained_model), "cannot locate: `{}'".format(pretrained_model)
 			pretrained = torch.load(pretrained_model)
