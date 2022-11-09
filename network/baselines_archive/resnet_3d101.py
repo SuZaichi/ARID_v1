@@ -7,6 +7,10 @@ from functools import partial
 import logging
 import os
 
+from torchvision.models import resnet50, resnet101
+
+from network.baselines_archive.resnext_3d import ResNeXt
+
 try:
     from . import initializer
     from .utils import load_state
